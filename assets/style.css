@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color:grey;
+}
+
+
+.header{
+    background-color: #192537;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav ul{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+   color: white;
+}
+
+.herosection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.632)),
+    url("/assets/img/cortaderas.png");
+    background-size: cover;
+    height: 600px;
+}
+
+.phprincipal {
+    height: 500px;
+    width:100%;
+
+}
+
+.herosection h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:black;
+    padding-top: 50px;  
+    font-size: 80px;
+}
+.herosection p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:whitesmoke;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.39);
+    color: white;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    border-radius: 5px;
+  
+}
+
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 100px;
+}
+
+
+
+.leftcard img , .centercard img , .rightcard img{
+  height: 200px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  
+
+
+}
+.contenedor_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.leftcard , .centercard , .rightcard{
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.leftcard p , .centercard p , .rightcard p {
+    display: flex;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    font-size: small;
+
+}
+
+.foot{
+    background-color: #192537;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.ig_fb {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
