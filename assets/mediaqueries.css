@@ -1,0 +1,82 @@
+@media (max-width: 992px) {
+    
+    .herosection {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .herosection {
+        display: block;
+        width: 100%;
+    }
+
+    .herosection p {
+        max-width: 80%;
+        font-size: 16px;
+
+    }
+    .button {
+        justify-content: center;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .herosection {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+
+    }
+
+    .herosection h2 {
+        font-size: 50px;
+    }
+
+    .herosection p {
+        display: flex;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .contenedornos  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+    .contenedornos p {
+        display: flex;
+        text-align: center;
+        padding: 0px 80px 40px;
+
+    }
+
+
+}

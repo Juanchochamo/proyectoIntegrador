@@ -1,3 +1,6 @@
+/* GLOBAL SETTINGS
+   ----------------------------- */
+
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +11,7 @@
     color:grey;
 }
 
-
+/****       estilo header            ***/
 .header{
     background-color: #192537;
     height: 70px;
@@ -16,7 +19,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .nav ul{
@@ -28,11 +33,30 @@
    color: white;
 }
 
+.nav {
+    display: flex;
+    
+}
+
+.nav i {
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu {
+    display:none;
+}
+
+/* ===================== portada page =====================*/
+
+
 .herosection {
     background-image: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.632)),
     url("/assets/img/cortaderas.png");
     background-size: cover;
     height: 600px;
+    position: relative;
+    
 }
 
 .phprincipal {
@@ -47,14 +71,17 @@
     justify-content: center;
     text-align: center;
     color:black;
-    padding-top: 50px;  
+    padding-top: 100px;  
     font-size: 80px;
+
 }
 .herosection p {
     display: flex;
     align-items: center;
     justify-content: center;
     color:whitesmoke;
+    text-align: center;
+
 }
 
 .button {
@@ -84,7 +111,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: underline;
-    padding: 100px;
+    padding: 25px 0px 50px;
 }
 
 
@@ -95,22 +122,25 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  
+  object-fit: cover;
 
 
 }
 .contenedor_cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
-    
+    padding-bottom: 100px;
+    flex-wrap: wrap;
 }
 
 .leftcard , .centercard , .rightcard{
     text-align: center;
     justify-content: center;
     padding: 15px;
+    height: auto;
+    width: 400px;
 
 }
 
@@ -122,6 +152,38 @@
 
 }
 
+.contenedornos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+    
+}
+
+.nosotros h2 {
+
+    text-align: center;
+    text-decoration: underline; 
+    padding-bottom: 50px ;
+}
+
+.nosotrostexto {
+    width: 300%;
+
+
+}
+
+.contenedornos img{
+    width: 100%;
+    padding-left: 25px;
+    height: 200px;
+    width: 300px;
+ 
+
+}
+
+/*============================= footer section ============================= */
 .foot{
     background-color: #192537;
     display: flex;
@@ -129,6 +191,11 @@
     text-align: center;
     align-items: center;
     gap: 10px;
+    
+}
+
+.footertext h4{
+    padding-top: 25px;
 }
 
 .redes{
@@ -144,4 +211,34 @@
     justify-content: center;
     gap: 15px;
 }
+
+
+@media (max-width:576px) {
+
+    .nav ul{
+     width: 100%;
+     height: calc(100vh - 70px );
+     position: absolute;
+     top: 70px;
+     left: 0;   
+     flex-direction:column;
+     align-items: center;
+     justify-content: center;
+     background-color: #192537;
+     transform: translateX(200%);
+     transition: all 0.4s ease-out;
+
+    }
+
+    .nav i {
+        display: block;
+    }
+
+    #toggle-menu:checked + .navbarlist {
+        transform:translateX(0%);
+        transition: all 0.4s ease-in;
+    }
+
+}
+
 

@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Inversiones inmobiliarias JC</title>
 </head>
 
@@ -20,12 +22,13 @@
 
 
         <nav class="nav">
-            <ul>
-                <li class="inicio"> <a href="#">Inicio</a></li>
+            <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbarlist">
                 <li class="sale"><a href="#destacados">Venta</a></li>
                 <li class="alquiler"><a href="#destacados">alquiler</a> </li>
                 <li class="proyect"> <a href="#destacados">proyectos</a> </li>
-                <li class="nosotros"> <a href="#">nosotros</a> </li>
+                <li class="nosotros"> <a href="#nosotros">nosotros</a> </li>
             </ul>
         </nav>
 
@@ -39,11 +42,12 @@
             <div class="herosection">
                 <h2>Inmobiliaria JC</h2>
 
-                <p> nos encontramos a lo largo de toda la sierra comechingones, pensando en
+                <p> Nos encontramos a lo largo de toda la sierra comechingones, pensando en
                     inversiones para nuestros clientes y cuidado del medioambiente.</p>
 
                 <div class="button">
-                    <a href="#">iniciar sesion</a>
+                    <a href="/pages/login.html">Iniciar Sesion</a>
+                    <a href="/pages/register.html">Registrarse</a>
                 </div>
 
             </div>
@@ -56,35 +60,84 @@
             </div>
             <div class="contenedor_cards">
                 <div class="leftcard">
-                    <a href="#"><img src="/assets/img/lote1200.png" alt="foto lote 1200mts2"></a>
-                    <p>
-                        Proyecto de urbanizacion, en reserva natural, espacio pensado para la gente que busca cuidar el
-                        medioambiente y desarrollar su vida.</p>
+                    <div>
+                        <a href="#"><img src="/assets/img/lote1200.png" alt="foto lote 1200mts2"></a>
+                    </div>
+                    <div>
+                        <p>
+                            Proyecto de urbanizacion, en reserva natural, espacio pensado para la gente que busca cuidar
+                            el
+                            medioambiente y desarrollar su vida.</p>
+                    </div>
+                    <div>
+                        <a href="#">ver mas</a>
+                    </div>
+
 
                 </div>
 
                 <div class="centercard">
-                    <a href="#"><img src="/assets/img/casa3amb.png" alt="foto casa alquiler"></a>
-                    <p> Alquiler casa 3 ambientes,
-                        ubicada en Los Molles. Contrato por 3 años.
-                        valor: $30.000 por mes.</p>
+                    <div>
+                        <a href="#"><img src="/assets/img/casa3amb.png" alt="foto casa alquiler"></a>
+                    </div>
+                    <div>
+                        <p> Alquiler casa 3 ambientes,
+                            ubicada en Los Molles. Contrato por 3 años.
+                            valor: $30.000 por mes.</p>
+                    </div>
+                    <div>
+                        <a href="#">ver mas</a>
+                    </div>
                 </div>
 
                 <div class="rightcard">
-                    <a href="#"><img src="/assets/img/casa4amb.png" alt="casa en venta 4 ambientes"></a>
-                    <p>
-                        Venta de casa 4 ambientes,
-                        ubicada en Carpinteria, ruta 1 km 25.
-                        valor: u$s 85.000</p>
+                    <div>
+                        <a href="#"><img src="/assets/img/casa4amb.png" alt="casa en venta 4 ambientes"></a>
+                    </div>
+                    <div>
+
+                        <p>
+                            Venta de casa 4 ambientes,
+                            ubicada en Carpinteria, ruta 1 km 25.
+                            valor: u$s 85.000</p>
+                    </div>
+
+                    <div>
+                        <a href="#">ver mas</a>
+                    </div>
                 </div>
 
+            </div>
+        </section>
+
+        <section>
+
+            <div class="nosotros" id="nosotros">
+
+                <h2> Nosotros</h2>
+                <div class="contenedornos">
+
+                    <a href="#"> <img src="/assets/img/InmobiliariaJC.png" alt="inmobiliariaJC"></a>
+
+
+                    <p class="text">
+                        Somos una inmobiliaria que está dispuesta a asesorarte y a acompañarte en el proceso de
+                        realizar
+                        una compra inmobiliaria con éxito.
+                        Nuestra Misión es asesorarte de manera eficiente para que vos y tu familia echen raíces en
+                        un
+                        lugar seguro y tranquilo como lo es toda la Costa de los Comechingones.
+                    </p>
+
+
+                </div>
             </div>
         </section>
 
 
     </main>
 
-    <footer>
+    <footer class="footertext">
 
         <div class="foot">
             <div>
